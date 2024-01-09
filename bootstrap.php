@@ -20,3 +20,7 @@ if (class_exists("Dotenv\Dotenv")) {
  *     // Your code here
  * });
  */
+
+
+
+\Torchlight\Jigsaw\TorchlightExtension::make($container, $events)->boot();

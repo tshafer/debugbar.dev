@@ -3,7 +3,7 @@
 return [
     'production' => false,
     'baseUrl' => '',
-    'title' => 'Jigsaw',
-    'description' => 'Website description.',
+    'title' => 'Rails debugbar',
+    'description' => 'Rails debugging dev tools for faster development',
     'collections' => [],
 ];
