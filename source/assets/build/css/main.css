@@ -690,6 +690,29 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
 .prose {
   color: var(--tw-prose-body);
   max-width: 65ch;
@@ -1105,9 +1128,9 @@ select {
 .prose :where(.prose > :last-child):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
   margin-bottom: 0;
 }
-.prose-red {
-  --tw-prose-links: #dc2626;
-  --tw-prose-invert-links: #ef4444;
+.prose-emerald {
+  --tw-prose-links: #059669;
+  --tw-prose-invert-links: #10b981;
 }
 /* https://torchlight.dev/docs/css */
 /*
@@ -1126,7 +1149,6 @@ pre {
   padding: 0px !important;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1rem;
-  line-height: 1.5rem;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1180,8 +1202,17 @@ pre code.torchlight .summary-caret {
 pre code[data-theme="github-light"].torchlight {
   background-color: #fafafa !important;
 }
+.flex {
+  display: flex;
+}
 .table {
   display: table;
+}
+.items-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .p-8 {
   padding: 2rem;
@@ -1190,8 +1221,7 @@ pre code[data-theme="github-light"].torchlight {
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.75rem;
 }
 .font-bold {
   font-weight: 700;

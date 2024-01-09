@@ -1,6 +1,6 @@
 ---
-extends: _layouts.base
-section: main
+extends: _layouts.docs
+section: content
 type: article
 title: 'How to create (add new) a MySQL user in command line'
 subtitle: 'I should definitely know this one but I keep coming back to this quick post'
