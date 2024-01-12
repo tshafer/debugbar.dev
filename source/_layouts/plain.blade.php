@@ -22,14 +22,14 @@
 
     <div id="__debugbar"></div>
 
-    <script defer src="/assets/debugbar/debugbar-yp8qNURx.js"></script>
+    <script defer src="/assets/debugbar/{{ $page->debugbarAssets['js'] }}"></script>
 
     <script type="text/javascript">
       window._debugbarConfigOptions = {mode: 'offline'}
     </script>
 
     <script type="module">
-      import sheet from '/assets/debugbar/debugbar-dFR8l5-L.css' assert { type: 'css' };
+      import sheet from '/assets/debugbar/{{ $page->debugbarAssets['css'] }}' assert { type: 'css' };
       const debugbar = document.getElementById('__debugbar-shadow-root')
       debugbar.shadowRoot.adoptedStyleSheets = [sheet];
     </script>

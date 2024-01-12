@@ -1,0 +1,17 @@
+{
+  "src/assets/ruby-logo.svg": {
+    "file": "assets/ruby-logo-kn_8RniZ.svg",
+    "src": "src/assets/ruby-logo.svg"
+  },
+  "src/main.ts": {
+    "assets": [
+      "assets/ruby-logo-kn_8RniZ.svg"
+    ],
+    "css": [
+      "assets/debugbar-dFR8l5-L.css"
+    ],
+    "file": "assets/debugbar-Nk4vNgen.js",
+    "isEntry": true,
+    "src": "src/main.ts"
+  }
+}
