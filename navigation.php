@@ -12,5 +12,6 @@ return [
     'github' => [
         'label' => 'Github',
         'url' => 'https://github.com/julienbourdeau/debugbar',
+        'external' => true,
     ],
 ];

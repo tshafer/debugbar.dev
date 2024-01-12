@@ -2,7 +2,7 @@
 
 @section('main')
 
-  <div class="flex justify-between mb-24">
+  <div class="flex justify-between">
     <aside id="docs-table-of-content" class="pr-6">
       <nav>
         <h2 class="mb-6 text-xl font-semibold leading-10">Documentation</h2>
