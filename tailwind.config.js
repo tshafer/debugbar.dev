@@ -24,7 +24,13 @@ module.exports = {
       '5xl': '2.625rem',
       '6xl': '10rem',
     },
-    extend: {},
+    extend: {
+      colors: {
+        'almost-white': '#f1f0ee',
+        "rails-red": "#D30001",
+        "rails-red-lightest": "#F0E7E9",
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),

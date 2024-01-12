@@ -2,17 +2,21 @@
 
 @section('body')
 
-  <header class="container">
-    @include ('_partials.header')
-  </header>
+  <div class="container mt-6 lg:mt-10 bg-white border p-2 lg:py-4 lg:px-8 rounded rounded-tr-xl shadow">
 
-  <div class="main-section container">
+    <header class="mb-16">
+      @include ('_partials.header')
+    </header>
 
-    @yield('main')
+    <div class="main-section">
+
+      @yield('main')
+
+    </div>
 
   </div>
 
-  <footer class="container">
+  <footer class="mb-24 py-2 container">
     @include('_partials.footer')
   </footer>
 
