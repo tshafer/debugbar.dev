@@ -34,5 +34,8 @@
       debugbar.shadowRoot.adoptedStyleSheets = [sheet];
     </script>
 
+
+    @include('_partials.analytics')
+
   </body>
 </html>
