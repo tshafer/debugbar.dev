@@ -13,9 +13,26 @@
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
   </head>
 
-  <body class="bg-almost-white bg-pattern border-t-4 border-rails-red text-stone-900 font-sans antialiased">
+  <body class="bg-almost-white bg-pattern text-stone-900 font-sans antialiased">
+
+    <div class="h-1 bg-gradient-to-r from-stone-400 from-10% via-stone-700 via-30% to-red-700 to-90%"></div>
 
     @yield('body')
+
+
+    <div id="__debugbar"></div>
+
+    <script defer src="/assets/debugbar/debugbar-yp8qNURx.js"></script>
+
+    <script type="text/javascript">
+      window._debugbarConfigOptions = {mode: 'offline'}
+    </script>
+
+    <script type="module">
+      import sheet from '/assets/debugbar/debugbar-dFR8l5-L.css' assert { type: 'css' };
+      const debugbar = document.getElementById('__debugbar-shadow-root')
+      debugbar.shadowRoot.adoptedStyleSheets = [sheet];
+    </script>
 
   </body>
 </html>
