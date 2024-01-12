@@ -1,9 +1,10 @@
 @extends('_layouts.base')
 
 @section('main')
-  <div class="prose prose-stone no-max-w">
+  <div class="w-full prose prose-stone">
     <h1>Documentation</h1>
-    <p>The debugbar is a gem you install in your Rails project. You can test it on this website, at the bottom of the page.</p>
+    <p>The debugbar is a gem you install in your Rails project. You can test it on this website, at the bottom of the page. This project is inspired by what you get in PHP, with the
+      <a href="https://github.com/barryvdh/laravel-debugbar">Laravel debugbar</a> for instance.</p>
 
     <div class="flex items-center space-x-6">
       @foreach([
@@ -14,8 +15,8 @@
         <a href="{{ $l['url'] }}" class="no-underline rounded-md bg-stone-100 px-2.5 py-1.5 text-sm font-semibold text-stone-600 shadow-md hover:bg-stone-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-600">
           {{ $l['label'] }}
         </a>
-
       @endforeach
+
         <a target="_blank" href="https://github.com/julienbourdeau/debugbar" class="no-underline inline-flex items-center gap-x-1.5 rounded-md bg-stone-100 px-2.5 py-1.5 text-sm font-semibold text-stone-600 shadow-md hover:bg-stone-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-600">
           Source Code
           <svg class="-ml-0.5 size-4" data-slot="icon" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -26,22 +27,25 @@
 
     </div>
 
-    <h2 class="mt-24">Table of content</h2>
+  </div>
 
-    <div class="flex justify-between">
+  <div class="mt-20">
+    <h2 class="text-2xl font-bold">Table of content</h2>
+
+    <div class="mt-6 flex justify-between">
 
       @foreach($page->getDocsToc() as $name => $items)
         <div>
 
-          <h3>{{ $name }}</h3>
+          <h3 class="mb-2.5 font-semibold text-lg">{{ $name }}</h3>
 
-          <ul>
+          <ul class="space-y-1.5">
             @foreach($items as $p)
               <li>
                 @if($p['disabled'])
                   <span>{{ $p['title'] }}</span>
                 @else
-                  <a href="{{ $p['url'] }}" @if($page->activePage($p['url'])) class="font-semibold" @endif>{{ $p['title'] }}</a>
+                  <a href="{{ $p['url'] }}" class="hover:text-orange-600">{{ $p['title'] }}</a>
                 @endif
               </li>
             @endforeach

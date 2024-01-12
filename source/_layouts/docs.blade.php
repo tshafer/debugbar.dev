@@ -32,9 +32,12 @@
 
     <div class="w-full max-w-[65ch]">
       <article>
-        <header class="mb-9 space-y-1">
+        <header class="mb-12 space-y-1">
           <p class="font-display text-sm font-medium text-orange-600">{{ $page->toc_section }}</p>
           <h1 class="font-display text-3xl tracking-tight text-stone-900">{{ $page->title }}</h1>
+          @if($page->subtitle)
+            <h2 class="font-display text-lg tracking-tight text-stone-600">{{ $page->subtitle }}</h2>
+          @endif
         </header>
 
         <div class="prose prose-stone max-w-none prose-headings:scroll-mt-28 prose-headings:font-display prose-headings:font-normal lg:prose-headings:scroll-mt-[8.5rem] prose-lead:text-stone-500  prose-a:font-semibold hover:prose-a:[--tw-prose-underline-size:6px] prose-pre:rounded-xl prose-pre:bg-stone-900 prose-pre:shadow-lg">

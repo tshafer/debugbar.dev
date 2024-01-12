@@ -15,7 +15,7 @@
 
   <body class="bg-almost-white bg-pattern text-stone-900 font-sans antialiased">
 
-    <div class="h-1 bg-gradient-to-r from-stone-100 from-10% via-slate-200 via-30% to-orange-300 to-90%"></div>
+    <div class="h-2 bg-gradient-to-r from-transparent from-10% via-orange-200 via-30% to-amber-600 to-90%"></div>
 
     @yield('body')
 

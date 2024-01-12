@@ -26,17 +26,17 @@
               </svg>
             </span>
 
-            <span class="shimmer"></span>
+{{--            <span class="shimmer"></span>--}}
           </button>
 
-          <a href="/docs/how-it-works" class="text-sm font-semibold leading-6 text-gray-900">
-            How It Works <span aria-hidden="true">→</span>
+          <a href="/docs/introduction" class="text-sm font-semibold leading-6 text-gray-900">
+            Learn more <span aria-hidden="true">→</span>
           </a>
         </div>
       </div>
       <div class="mt-16 flow-root sm:mt-24">
 {{--        <div class="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">--}}
-          <img src="/assets/images/debugbar-hero-1.png" class="rounded-4xl" alt="App screenshot" >
+          <img src="/assets/images/debugbar-hero-2.png" alt="App screenshot" >
 {{--        </div>--}}
       </div>
     </div>

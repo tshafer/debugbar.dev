@@ -69,3 +69,7 @@ In your `index.html` file, make sure the following code is added:
 ```
 
 Note that if you changed the route prefix in your configuration, you'll need to update the url in the script tag.
+
+## Restrictions
+
+Currently, the debugbar only support backend running a single process. For example with Puma, you must run in "single mode" (default) and not "cluster mode"! Make sure `WEB_CONCURRENCY` is not set or set to `0`.

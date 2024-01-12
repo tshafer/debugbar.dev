@@ -2,7 +2,10 @@
 {{--  LEFT--}}
   <div>
     <a href="/" class="">
-      <img src="/assets/debugbar-logo.svg" class="h-7 fill-current text-current" alt="">
+{{--      <img src="/assets/debugbar-logo.svg" class="h-7 fill-current text-current" alt="">--}}
+      <div class="text-stone-900">
+        @include('_partials.logo')
+      </div>
     </a>
   </div>
 
