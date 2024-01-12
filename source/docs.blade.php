@@ -9,7 +9,6 @@
       @foreach([
         ['label' => 'Getting Started', 'url' => '/docs/installation'],
         ['label' => 'How It Works', 'url' => '/docs/how-it-works'],
-//        ['label' => 'Source Code', 'url' => 'https://github.com/julienbourdeau/debugbar', 'external' => true],
         ] as $l)
 
         <a href="{{ $l['url'] }}" class="no-underline rounded-md bg-stone-100 px-2.5 py-1.5 text-sm font-semibold text-stone-600 shadow-md hover:bg-stone-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-stone-600">
