@@ -4,24 +4,26 @@ on:
   push:
     branches: [ "master" ]
 
-# permissions:
-#   contents: read
-
 jobs:
   build:
 
-    runs-on: ubuntu-latest
-    #    if: "contains(github.event.head_commit.message, 'deploy')"
+    runs-on: ubuntu-20.04
+    if: "contains(github.event.head_commit.message, 'deploy')"
 
     steps:
       - uses: actions/checkout@v3
 
+      - name: Setup PHP with tools
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
       - name: Install PHP dependencies
-        run: composer install --prefer-dist --no-progress
+        run: php -v && composer install --prefer-dist --no-progress
 
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
           cache: 'npm'
 
       - name: Build site
@@ -39,4 +41,4 @@ jobs:
           git commit -m 'Build static site'
 
       - name: Push to static branch
-        run: git push origin $(git subtree split --prefix build_production v8):static --force
+        run: git push origin $(git subtree split --prefix build_production master):static --force
