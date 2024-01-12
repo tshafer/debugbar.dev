@@ -33,7 +33,7 @@
     <div class="w-full max-w-[65ch]">
       <article>
         <header class="mb-9 space-y-1">
-          <p class="font-display text-sm font-medium text-red-600">{{ $page->toc_section }}</p>
+          <p class="font-display text-sm font-medium text-orange-600">{{ $page->toc_section }}</p>
           <h1 class="font-display text-3xl tracking-tight text-stone-900">{{ $page->title }}</h1>
         </header>
 

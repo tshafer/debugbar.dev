@@ -7,4 +7,7 @@ seo_title:
 seo_description: 
 ---
 
-lorem ipsum
+There are a few things you can configure in the Debugbar. The configuration happens in two places:
+
+* in `config/initializers/debugbar.rb` for the general gem configuration
+* in a `script` tag in your page for some specific configuration

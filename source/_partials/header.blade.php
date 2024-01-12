@@ -9,7 +9,7 @@
 {{--  RIGHT--}}
   <div class="py-3 flex items-center space-x-8 font-semibold">
     @foreach($page->navigation as $nav)
-      <a href="{{ $nav->url }}" class="inline-flex items-center gap-x-1.5 hover:text-red-700" @if($nav->external) target="_blank" @endif>
+      <a href="{{ $nav->url }}" class="inline-flex items-center gap-x-1.5 hover:text-orange-600" @if($nav->external) target="_blank" @endif>
         {{ $nav->label }}
 
         @if($nav->external)
