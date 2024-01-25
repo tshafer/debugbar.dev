@@ -35,4 +35,7 @@ return [
 
         return clone $docsToc;
     },
+    'screenshot' => function ($page, $img, $alt = '') {
+        return "<img src='/assets/screenshots/$img' alt='$alt' class='shadow-lg rounded-lg' />";
+    },
 ];

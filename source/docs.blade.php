@@ -3,7 +3,7 @@
 @section('main')
   <div class="w-full prose prose-stone">
     <h1>Documentation</h1>
-    <p>The debugbar is a gem you install in your Rails project. You can test it on this website, at the bottom of the page. This project is inspired by what you get in PHP, with the
+    <p>The debugbar is a gem you install in your Rails project. You can test it on this website, at the bottom of the page. This project is inspired by what you get in the PHP world, with the
       <a href="https://github.com/barryvdh/laravel-debugbar">Laravel debugbar</a> for instance.</p>
 
     <div class="flex items-center space-x-6">

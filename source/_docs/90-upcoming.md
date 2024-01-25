@@ -14,7 +14,7 @@ It should be ignored for all request not coming from authorized users. If ignore
 
 Running the debugbar in production will let you explore your application with real data!
 
-Running the debugbar in staging can be useful if you have a frontend SPA and a backend API. The staging is the backend and you only run the frontend locally.
+Running the debugbar in staging can be useful if you have a frontend SPA and a backend API. The staging is the backend, and you only run the frontend locally.
 
 
 ## Support for Puma cluster mode (multi process)
