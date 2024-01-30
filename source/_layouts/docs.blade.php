@@ -3,7 +3,7 @@
 @section('main')
 
   <div class="flex justify-between">
-    <aside id="docs-table-of-content" class="pr-6">
+    <aside id="docs-table-of-content" class="lg:min-w-64 mr-20">
       <nav>
         <h2 class="mb-6 text-xl font-semibold leading-10">Documentation</h2>
         @foreach($page->getDocsToc() as $name => $items)
@@ -30,7 +30,7 @@
       </nav>
     </aside>
 
-    <div class="w-full max-w-[65ch]">
+    <div class="w-full">
       <article>
         <header class="mb-12 space-y-1">
           <p class="font-display text-sm font-medium text-orange-600">{{ $page->toc_section }}</p>

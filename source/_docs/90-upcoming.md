@@ -33,6 +33,10 @@ If you backend makes HTTP requests to other services, it would be nice to see th
 
 If I can't, I'll start with Faraday.
 
+### Hotwire
+
+I'm not sure yet what there is to do here, but I'm super exited about Hotwire and I'm sure there is tons of value to add there!
+
 ### Sidekiq
 
 Active Job is super easy to support because there is an event dispatched. To support Sidekiq, I'll need to monkey patch the `perform_async` method (and related methods). I have POC working, but I need to make sure it's not too invasive.

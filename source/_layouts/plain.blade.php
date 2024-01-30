@@ -25,7 +25,7 @@
     <script defer src="/assets/debugbar/{{ $page->debugbarAssets['js'] }}"></script>
 
     <script type="text/javascript">
-      window._debugbarConfigOptions = {mode: 'offline'}
+      window._debugbarConfigOptions = {mode: 'offline', height: 540}
     </script>
 
     <script type="module">

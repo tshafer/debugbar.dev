@@ -31,4 +31,4 @@ end
 <% Debugbar.msg("Rendering navigation") %>
 ```
 
-{!! $page->screenshot('debugbar-msg.png', "Screenshot of debugbar with Debugging messages") !!}
+{!! $page->screenshot('debugbar-msg', "Screenshot of debugbar with Debugging messages") !!}

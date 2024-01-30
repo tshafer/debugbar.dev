@@ -1,10 +1,11 @@
 ---
 slug: "logs"
 toc_section: "Features"
-title: 'Logs'
+title: 'Logs (next)'
 subtitle: "Same as Rails.logger, but per request"
 seo_title: 
 seo_description: 
+disabled: true
 ---
 
 If you're used to tail the logs, you'll love this feature. It's the same logs, but per request and easily accessible.
