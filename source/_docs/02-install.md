@@ -69,3 +69,15 @@ In your `index.html` file, make sure the following code is added:
 ```
 
 Note that if you changed the route prefix in your configuration, you'll need to update the url in the script tag.
+
+## ActionCable connection
+
+Make sure the frontend is allowed to connect to ActionCable. You can define the allowed origins in your `config/environments/development.rb` file.
+
+```ruby
+Algolia::Application.configure do
+  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+end
+```
+
+Have a look at your `config/cable.yml` file to ensure you're using a valid adapter.
