@@ -2,10 +2,10 @@
 
 @section('main')
 
-  <div class="flex justify-between">
-    <aside id="docs-table-of-content" class="lg:min-w-64 mr-20">
-      <nav>
-        <h2 class="mb-6 text-xl font-semibold leading-10">Documentation</h2>
+  <div class="space-y-12 lg:flex lg:justify-between lg:space-y-0">
+    <aside x-data="{tocOpen: false}" id="docs-table-of-content" class="shadow-lg p-3 border lg:border-0 lg:min-w-64 lg:mr-20 lg:shadow-none">
+      <h2 @click="tocOpen = !tocOpen" class="cursor-pointer lg:cursor-auto text-xl font-semibold leading-10">Table of contents</h2>
+      <nav x-show="tocOpen"  @click.away="tocOpen = false" class="lg:block mt-6" style="display: none">
         @foreach($page->getDocsToc() as $name => $items)
           <h3 class="font-display text-sm font-semibold leading-6">{{ $name }}</h3>
 

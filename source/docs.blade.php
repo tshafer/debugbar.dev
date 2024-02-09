@@ -6,7 +6,7 @@
     <p>The debugbar is a gem you install in your Rails project. You can test it on this website, at the bottom of the page. This project is inspired by what you get in the PHP world, with the
       <a href="https://github.com/barryvdh/laravel-debugbar">Laravel debugbar</a> for instance.</p>
 
-    <div class="mt-6 flex items-center space-x-6">
+    <div class="mt-6 max-w-[80%] flex md:items-center space-y-4 md:space-y-0 md:space-x-6 flex-col justify-start md:flex-row">
       @foreach([
         ['label' => 'Getting Started', 'url' => '/docs/installation'],
         ['label' => 'How It Works', 'url' => '/docs/how-it-works'],
@@ -32,10 +32,10 @@
   <div class="mt-20">
     <h2 class="text-2xl font-bold">Table of content</h2>
 
-    <div class="mt-6 flex justify-between">
+    <div class="mt-6 space-y-6 md:space-y-0 md:flex md:flex-wrap md:justify-between">
 
       @foreach($page->getDocsToc() as $name => $items)
-        <div>
+        <div class="">
 
           <h3 class="mb-2.5 font-semibold text-lg">{{ $name }}</h3>
 

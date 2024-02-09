@@ -1,4 +1,4 @@
-<div class="flex items-center justify-between flex-row-reverse">
+<div class="space-y-1 md:flex md:space-y-0 items-center justify-between flex-row-reverse">
   <p class="text-base text-stone-600">
     Maintained by <a class="text-stone-600 font-medium" href="https://www.julienbourdeau.com">Julien Bourdeau</a>
   </p>
