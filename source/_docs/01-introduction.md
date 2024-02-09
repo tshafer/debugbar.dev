@@ -17,11 +17,11 @@ I usually tail the logs of my application. I can see the requests coming in, `pu
 
 But everything is mixed together. A typical SPA frontend will make a multiple of requests so everything is printed together in the terminal. Now, add your background jobs making BD queries and printing their own stuff too.
 
-When looking at this documentation, you might be thinking "I already have this information in my logs". Yes, you do. But with the debugbar it's grouped by request and much easier to use.
+When looking at this documentation, you might be thinking _"I already have this information in my logs!"_. Yes, you do. But with the debugbar it's grouped by request and much easier to use.
 
 ## #2 Visible in the same window
 
-I hate switching constantly between the browser where I click a link, and the terminal where I tail the logs. I want to see the debugging information in the same window.
+I hate switching constantly between the browser, and the terminal where I tail the logs. I want to see the debugging information in the same window.
 
 We use the browser devtools constantly, I think it's a natural way to work.
 

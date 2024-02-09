@@ -50,7 +50,7 @@ end
 
 Whenever a request is made to the backend, the debugbar will store the data in a buffer. By default, the buffer is an in-memory buffer. You can use a different buffer by setting the `buffer_adapter` option in the initializer. So far, there is only a memory buffer and a `null` buffer.
 
-A redis buffer is coming to support puma in cluster mode. Custom adapters will be available eventually.
+A persisted buffer is coming to support Puma in cluster mode. Custom adapters will also be available.
 
 ```ruby
 Debugbar.configure do |config|
@@ -61,7 +61,7 @@ end
 
 ## Enable/disable a feature
 
-This is show in the [features](/docs/features) section, but generally, you can enable/disable a feature in the initializer.
+This is showed in the features] section, but generally, you can enable/disable a feature in the initializer.
 By default, all features are enabled if the underlying module is available. For example, Active Record is enabled if the `ActiveRecord` module is available.
 
 ```ruby
