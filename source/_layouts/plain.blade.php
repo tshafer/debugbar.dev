@@ -28,13 +28,6 @@
       window._debugbarConfigOptions = {mode: 'offline', height: 540}
     </script>
 
-    <script type="module">
-      import sheet from '/assets/debugbar/{{ $page->debugbarAssets['css'] }}' assert { type: 'css' };
-      const debugbar = document.getElementById('__debugbar-shadow-root')
-      debugbar.shadowRoot.adoptedStyleSheets = [sheet];
-    </script>
-
-
     @include('_partials.analytics')
 
   </body>

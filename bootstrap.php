@@ -24,8 +24,7 @@ $events->beforeBuild(function (Jigsaw $jigsaw) {
     $manifest = json_decode(file_get_contents(__DIR__.'/source/assets/debugbar/manifest.json'), true);
 
     $jigsaw->setConfig('debugbarAssets', [
-        'js' => basename($manifest['src/main.ts']['file']),
-        'css' => basename($manifest['src/main.ts']['css'][0]),
+        'js' => basename($manifest['src/demo.ts']['file']),
     ]);
 });
 

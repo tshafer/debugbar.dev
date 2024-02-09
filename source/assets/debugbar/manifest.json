@@ -3,15 +3,12 @@
     "file": "assets/ruby-logo-kn_8RniZ.svg",
     "src": "src/assets/ruby-logo.svg"
   },
-  "src/main.ts": {
+  "src/demo.ts": {
     "assets": [
       "assets/ruby-logo-kn_8RniZ.svg"
     ],
-    "css": [
-      "assets/debugbar-eZ_KEm34.css"
-    ],
-    "file": "assets/debugbar-INtmTHYq.js",
+    "file": "assets/debugbar-756U0KKi.js",
     "isEntry": true,
-    "src": "src/main.ts"
+    "src": "src/demo.ts"
   }
 }
