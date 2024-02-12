@@ -1,8 +1,8 @@
 @php
-  $title = $page->seo_title ?? $page->description;
+  $title = $page->seo_title ?? $page->title;
   $description = $page->seo_description ?? $page->description;
-  $seoGraphImg = false; // TODO: Make beautiful SEO imae
-  $canonicalUlr = $page->getUrl();
+  $seoGraphImg = url('/assets/debugbar-graph-img.png');
+  $canonicalUrl = $page->getUrl();
 @endphp
 
 <title>{{ $title }}</title>
@@ -13,8 +13,8 @@
   <meta property="og:description" content="{{ $description }}" />
 @endisset
 
-<link rel="canonical" href="{{ $canonicalUlr }}"/>
-<meta property="og:url" content="{{ $canonicalUlr }}" />
+<link rel="canonical" href="{{ $canonicalUrl }}"/>
+<meta property="og:url" content="{{ $canonicalUrl }}" />
 
 <meta name="twitter:creator" content="@julienbourdeau" />
 

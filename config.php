@@ -5,8 +5,8 @@ use Illuminate\Support\Str;
 return [
     'production' => false,
     'baseUrl' => '',
-    'title' => 'Rails debugbar',
-    'description' => 'Rails debugging dev tools for faster development',
+    'title' => 'Debugbar For Ruby on Rails',
+    'description' => 'Rails debugging dev tools for faster development. Inspect your request details (queries, logs, cache, jobs and more).',
     'githubRepo' => 'https://github.com/julienbourdeau/debugbar',
     'navigation' => require_once('navigation.php'),
     'collections' => [

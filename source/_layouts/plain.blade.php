@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="{{ url('favicon.svg') }}">
-    <link rel=”mask-icon” href={{ url('favicon.svg') }} color=”#dc2626">
+    <link rel="apple-touch-icon" sizes="75x75" href="{{ url('/assets/favicon.png') }}">
+    <link rel="icon" href="{{ url('/assets/favicon.svg') }}">
+    <link rel=”mask-icon” href={{ url('/assets/favicon.svg') }} color=”#f1f0ee">
 
     @include('_partials.seo')
 
