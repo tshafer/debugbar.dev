@@ -9,6 +9,10 @@ return [
         'label' => 'Documentation',
         'url' => '/docs',
     ],
+    'changelog' => [
+        'label' => 'Changelog',
+        'url' => '/changelog',
+    ],
     'github' => [
         'label' => 'Github',
         'url' => 'https://github.com/julienbourdeau/debugbar',
